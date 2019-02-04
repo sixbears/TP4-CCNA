@@ -8,7 +8,7 @@
 
 * Désactiver le firewall (pour éviter certaines actions non voulues)
 
-* Affichage des route de la VM router1tp4.b1
+* Affichage des route de la VM router1tp4.b1   
 `10.1.0.0/24 dev enp0s8 proto kernel scope link src 10.1.0.254 metric 100
 10.2.0.0/24 dev enp0s9 proto kernel scope link src 10.2.0.254 metric 101`
 
@@ -28,9 +28,8 @@
 
 ### Test :
 
-*trace route depuis la vmclient1:
-`
-[root@client1tp4 ~]# traceroute 10.2.0.10
+* Traceroute depuis la vmclient1   
+`[root@client1tp4 ~]# traceroute 10.2.0.10
 traceroute to 10.2.0.10 (10.2.0.10), 30 hops max, 60 byte packets
  1  router1tp4.b1 (10.1.0.254)  0.367 ms  0.291 ms  0.155 ms
  2  10.2.0.10 (10.2.0.10)  0.451 ms !X  0.379 ms !X  0.266 ms !X
